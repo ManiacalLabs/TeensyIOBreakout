@@ -464,11 +464,11 @@ Wire Wire Line
 	6300 3200 6450 3200
 Wire Wire Line
 	6300 3300 6450 3300
-Text GLabel 8700 1600 2    39   Input ~ 0
-IO_18
 Text GLabel 8700 1700 2    39   Input ~ 0
-IO_19
+IO_18
 Text GLabel 8700 1800 2    39   Input ~ 0
+IO_19
+Text GLabel 8700 1600 2    39   Input ~ 0
 GND
 $Comp
 L Connector:Conn_01x03_Male J5
@@ -488,55 +488,40 @@ Wire Wire Line
 Wire Wire Line
 	8550 1800 8700 1800
 Text Notes 9000 1800 0    50   ~ 0
-DATA\nCLK\nGND
-Text GLabel 8700 2200 2    39   Input ~ 0
+GND\nDATA\nCLK\n
+Text GLabel 8700 2250 2    39   Input ~ 0
 IO_11
-Text GLabel 8700 2300 2    39   Input ~ 0
+Text GLabel 8700 2350 2    39   Input ~ 0
 IO_12
-Text GLabel 8700 2100 2    39   Input ~ 0
+Text GLabel 8700 2150 2    39   Input ~ 0
 IO_10
-Text GLabel 8700 2400 2    39   Input ~ 0
+Text GLabel 8700 2450 2    39   Input ~ 0
 IO_13
-$Comp
-L Connector:Conn_01x04_Male J6
-U 1 1 5BC0DBEC
-P 8350 2200
-F 0 "J6" H 8456 2478 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 8456 2387 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 8350 2200 50  0001 C CNN
-F 3 "~" H 8350 2200 50  0001 C CNN
-	1    8350 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8550 2100 8700 2100
+	8550 2150 8700 2150
 Wire Wire Line
-	8700 2200 8550 2200
+	8700 2250 8550 2250
 Wire Wire Line
-	8550 2300 8700 2300
+	8550 2350 8700 2350
 Wire Wire Line
-	8700 2400 8550 2400
-Text Notes 9000 2400 0    50   ~ 0
-CS\nDOUT\nDIN\nSCK
+	8700 2450 8550 2450
+Text Notes 9000 2450 0    50   ~ 0
+GND\nCS\nDOUT\nDIN\nSCK
 Text GLabel 6700 4800 2    39   Input ~ 0
 GND
 $Comp
-L Connector:Conn_01x02_Male J8
-U 1 1 5BC17E65
-P 6450 5150
-F 0 "J8" H 6556 5328 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 6600 5250 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6450 5150 50  0001 C CNN
-F 3 "~" H 6450 5150 50  0001 C CNN
-	1    6450 5150
+L Connector:Conn_01x05_Male J6
+U 1 1 5BC1AC24
+P 8350 2250
+F 0 "J6" H 8456 2628 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 8456 2537 50  0000 C CNN
+F 2 "" H 8350 2250 50  0001 C CNN
+F 3 "~" H 8350 2250 50  0001 C CNN
+	1    8350 2250
 	1    0    0    -1  
 $EndComp
-Text GLabel 6700 5250 2    39   Input ~ 0
-Vin
-Wire Wire Line
-	6650 5150 6700 5150
-Wire Wire Line
-	6650 5250 6700 5250
-Text GLabel 6700 5150 2    39   Input ~ 0
+Text GLabel 8700 2050 2    39   Input ~ 0
 GND
+Wire Wire Line
+	8550 2050 8700 2050
 $EndSCHEMATC
