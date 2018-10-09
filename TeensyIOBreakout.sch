@@ -20,7 +20,7 @@ U 1 1 5BA175FA
 P 3100 2900
 F 0 "U1" H 3100 4487 60  0000 C CNN
 F 1 "Teensy3.2" H 3100 4381 60  0000 C CNN
-F 2 "Teensy32NoCenterPads:Teensy30_31_32_LC_NoCenterPads" H 3100 2100 60  0001 C CNN
+F 2 "Teensy32NoCenterPads:Teensy30_31_32_LC_EdgePads" H 3100 2100 60  0001 C CNN
 F 3 "" H 3100 2100 60  0000 C CNN
 	1    3100 2900
 	1    0    0    -1  
@@ -179,41 +179,24 @@ NoConn ~ 4100 3500
 NoConn ~ 4100 3600
 NoConn ~ 4100 3800
 NoConn ~ 4100 3900
-NoConn ~ 2100 3400
-NoConn ~ 2100 3300
 NoConn ~ 2100 3200
-NoConn ~ 2100 3100
-NoConn ~ 2100 3000
 $Comp
-L Connector:Conn_01x02_Male J5
+L Connector:Conn_01x02_Male J7
 U 1 1 5BA6CC3E
-P 6450 4650
-F 0 "J5" H 6556 4828 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 6600 4750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6450 4650 50  0001 C CNN
-F 3 "~" H 6450 4650 50  0001 C CNN
-	1    6450 4650
+P 6450 4800
+F 0 "J7" H 6556 4978 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 6600 4900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6450 4800 50  0001 C CNN
+F 3 "~" H 6450 4800 50  0001 C CNN
+	1    6450 4800
 	1    0    0    -1  
 $EndComp
-Text GLabel 6700 4750 2    39   Input ~ 0
-GND
-Text GLabel 6700 4650 2    39   Input ~ 0
+Text GLabel 6700 4900 2    39   Input ~ 0
 Vin
 Wire Wire Line
-	6650 4650 6700 4650
+	6650 4800 6700 4800
 Wire Wire Line
-	6650 4750 6700 4750
-$Comp
-L Connector:Conn_01x12_Male J1
-U 1 1 5BA1BEEA
-P 6100 2100
-F 0 "J1" H 6000 2100 50  0000 C CNN
-F 1 "Conn_01x12_Male" H 6400 1400 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 6100 2100 50  0001 C CNN
-F 3 "~" H 6100 2100 50  0001 C CNN
-	1    6100 2100
-	1    0    0    -1  
-$EndComp
+	6650 4900 6700 4900
 Text GLabel 6450 1800 2    39   Input ~ 0
 IO_2
 Text GLabel 6450 1900 2    39   Input ~ 0
@@ -262,76 +245,54 @@ Wire Wire Line
 	6300 2600 6450 2600
 Wire Wire Line
 	6450 2700 6300 2700
-$Comp
-L Connector:Conn_01x12_Male J3
-U 1 1 5BA22A89
-P 6100 3600
-F 0 "J3" H 6000 3600 50  0000 C CNN
-F 1 "Conn_01x12_Male" H 6400 2900 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 6100 3600 50  0001 C CNN
-F 3 "~" H 6100 3600 50  0001 C CNN
-	1    6100 3600
-	1    0    0    -1  
-$EndComp
-Text GLabel 6450 3300 2    39   Input ~ 0
-IO_14
-Text GLabel 6450 3400 2    39   Input ~ 0
-IO_15
-Text GLabel 6450 3200 2    39   Input ~ 0
-IO_13
-Text GLabel 6450 3500 2    39   Input ~ 0
-IO_16
-Text GLabel 6450 3800 2    39   Input ~ 0
-IO_19
-Text GLabel 6450 3900 2    39   Input ~ 0
-IO_20
 Text GLabel 6450 3600 2    39   Input ~ 0
-IO_17
+IO_14
 Text GLabel 6450 3700 2    39   Input ~ 0
-IO_18
-Text GLabel 6450 3100 2    39   Input ~ 0
-IO_12
-Text GLabel 6450 4000 2    39   Input ~ 0
-IO_21
+IO_15
+Text GLabel 6450 3500 2    39   Input ~ 0
+IO_13
+Text GLabel 6450 3800 2    39   Input ~ 0
+IO_16
 Text GLabel 6450 4100 2    39   Input ~ 0
-IO_22
+IO_19
 Text GLabel 6450 4200 2    39   Input ~ 0
+IO_20
+Text GLabel 6450 3900 2    39   Input ~ 0
+IO_17
+Text GLabel 6450 4000 2    39   Input ~ 0
+IO_18
+Text GLabel 6450 3400 2    39   Input ~ 0
+IO_12
+Text GLabel 6450 4300 2    39   Input ~ 0
+IO_21
+Text GLabel 6450 4400 2    39   Input ~ 0
+IO_22
+Text GLabel 6450 4500 2    39   Input ~ 0
 IO_23
 Wire Wire Line
-	6300 3100 6450 3100
+	6300 3400 6450 3400
 Wire Wire Line
-	6450 3200 6300 3200
+	6450 3500 6300 3500
 Wire Wire Line
-	6300 3300 6450 3300
+	6300 3600 6450 3600
 Wire Wire Line
-	6450 3400 6300 3400
+	6450 3700 6300 3700
 Wire Wire Line
-	6300 3500 6450 3500
+	6300 3800 6450 3800
 Wire Wire Line
-	6450 3600 6300 3600
+	6450 3900 6300 3900
 Wire Wire Line
-	6300 3700 6450 3700
+	6300 4000 6450 4000
 Wire Wire Line
-	6450 3800 6300 3800
+	6450 4100 6300 4100
 Wire Wire Line
-	6300 3900 6450 3900
+	6300 4200 6450 4200
 Wire Wire Line
-	6450 4000 6300 4000
+	6450 4300 6300 4300
 Wire Wire Line
-	6300 4100 6450 4100
+	6300 4400 6450 4400
 Wire Wire Line
-	6450 4200 6300 4200
-$Comp
-L Connector:Conn_01x12_Male J2
-U 1 1 5BA29C26
-P 7200 2100
-F 0 "J2" H 7150 2100 50  0000 R CNN
-F 1 "Conn_01x12_Male" H 7400 1400 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 7200 2100 50  0001 C CNN
-F 3 "~" H 7200 2100 50  0001 C CNN
-	1    7200 2100
-	-1   0    0    -1  
-$EndComp
+	6450 4500 6300 4500
 Text GLabel 2100 1400 2    39   Input ~ 0
 GND
 Wire Wire Line
@@ -343,6 +304,93 @@ Wire Wire Line
 	2050 1600 2100 1600
 Text GLabel 7000 1450 2    39   Input ~ 0
 GND
+Text GLabel 7000 3050 2    39   Input ~ 0
+GND
+$Comp
+L Connector:Conn_01x14_Male J1
+U 1 1 5BBD5EBF
+P 6100 2200
+F 0 "J1" H 6206 2978 50  0000 C CNN
+F 1 "Conn_01x14_Male" H 6206 2887 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 6100 2200 50  0001 C CNN
+F 3 "~" H 6100 2200 50  0001 C CNN
+	1    6100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x14_Male J3
+U 1 1 5BBD5F70
+P 6100 3800
+F 0 "J3" H 6206 4578 50  0000 C CNN
+F 1 "Conn_01x14_Male" H 6206 4487 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 6100 3800 50  0001 C CNN
+F 3 "~" H 6100 3800 50  0001 C CNN
+	1    6100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3050 7000 3200
+$Comp
+L Connector:Conn_01x14_Male J4
+U 1 1 5BBD8B92
+P 7200 3800
+F 0 "J4" H 7173 3773 50  0000 R CNN
+F 1 "Conn_01x14_Male" H 7173 3682 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 7200 3800 50  0001 C CNN
+F 3 "~" H 7200 3800 50  0001 C CNN
+	1    7200 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x14_Male J2
+U 1 1 5BBDA01C
+P 7200 2200
+F 0 "J2" H 7173 2173 50  0000 R CNN
+F 1 "Conn_01x14_Male" H 7173 2082 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 7200 2200 50  0001 C CNN
+F 3 "~" H 7200 2200 50  0001 C CNN
+	1    7200 2200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3200 7000 3300
+Connection ~ 7000 3200
+Connection ~ 7000 3300
+Wire Wire Line
+	7000 3300 7000 3400
+Connection ~ 7000 3400
+Wire Wire Line
+	7000 3400 7000 3500
+Connection ~ 7000 3500
+Wire Wire Line
+	7000 3500 7000 3600
+Connection ~ 7000 3600
+Wire Wire Line
+	7000 3600 7000 3700
+Connection ~ 7000 3700
+Wire Wire Line
+	7000 3700 7000 3800
+Connection ~ 7000 3800
+Wire Wire Line
+	7000 3800 7000 3900
+Connection ~ 7000 3900
+Wire Wire Line
+	7000 3900 7000 4000
+Connection ~ 7000 4000
+Wire Wire Line
+	7000 4000 7000 4100
+Connection ~ 7000 4100
+Wire Wire Line
+	7000 4100 7000 4200
+Connection ~ 7000 4200
+Wire Wire Line
+	7000 4200 7000 4300
+Connection ~ 7000 4300
+Wire Wire Line
+	7000 4300 7000 4400
+Connection ~ 7000 4400
+Wire Wire Line
+	7000 4400 7000 4500
 Wire Wire Line
 	7000 1450 7000 1600
 Connection ~ 7000 1600
@@ -378,52 +426,102 @@ Wire Wire Line
 Connection ~ 7000 2600
 Wire Wire Line
 	7000 2600 7000 2700
+Connection ~ 7000 2700
+Wire Wire Line
+	7000 2700 7000 2800
+Connection ~ 7000 2800
+Wire Wire Line
+	7000 2800 7000 2900
+Text GLabel 2000 3000 0    39   Input ~ 0
+VBAT
+Text GLabel 2000 3100 0    39   Input ~ 0
+3V3
+Text GLabel 2000 3300 0    39   Input ~ 0
+PROG
+Text GLabel 2000 3400 0    39   Input ~ 0
+A14
+Wire Wire Line
+	2000 3000 2100 3000
+Wire Wire Line
+	2100 3100 2000 3100
+Wire Wire Line
+	2000 3300 2100 3300
+Wire Wire Line
+	2100 3400 2000 3400
+Text GLabel 6450 2800 2    39   Input ~ 0
+VBAT
+Text GLabel 6450 2900 2    39   Input ~ 0
+3V3
+Wire Wire Line
+	6300 2800 6450 2800
+Wire Wire Line
+	6450 2900 6300 2900
+Text GLabel 6450 3200 2    39   Input ~ 0
+PROG
+Text GLabel 6450 3300 2    39   Input ~ 0
+A14
+Wire Wire Line
+	6300 3200 6450 3200
+Wire Wire Line
+	6300 3300 6450 3300
+Text GLabel 8700 1700 2    39   Input ~ 0
+IO_18
+Text GLabel 8700 1800 2    39   Input ~ 0
+IO_19
+Text GLabel 8700 1600 2    39   Input ~ 0
+GND
 $Comp
-L Connector:Conn_01x12_Male J4
-U 1 1 5BA31CAD
-P 7200 3600
-F 0 "J4" H 7150 3600 50  0000 R CNN
-F 1 "Conn_01x12_Male" H 7400 2900 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 7200 3600 50  0001 C CNN
-F 3 "~" H 7200 3600 50  0001 C CNN
-	1    7200 3600
-	-1   0    0    -1  
+L Connector:Conn_01x03_Male J5
+U 1 1 5BBF905E
+P 8350 1700
+F 0 "J5" H 8456 1978 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 8456 1887 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8350 1700 50  0001 C CNN
+F 3 "~" H 8350 1700 50  0001 C CNN
+	1    8350 1700
+	1    0    0    -1  
 $EndComp
-Text GLabel 7000 2950 2    39   Input ~ 0
+Wire Wire Line
+	8550 1600 8700 1600
+Wire Wire Line
+	8550 1700 8700 1700
+Wire Wire Line
+	8550 1800 8700 1800
+Text Notes 9000 1800 0    50   ~ 0
+GND\nDATA\nCLK\n
+Text GLabel 8700 2250 2    39   Input ~ 0
+IO_11
+Text GLabel 8700 2350 2    39   Input ~ 0
+IO_12
+Text GLabel 8700 2150 2    39   Input ~ 0
+IO_10
+Text GLabel 8700 2450 2    39   Input ~ 0
+IO_13
+Wire Wire Line
+	8550 2150 8700 2150
+Wire Wire Line
+	8700 2250 8550 2250
+Wire Wire Line
+	8550 2350 8700 2350
+Wire Wire Line
+	8700 2450 8550 2450
+Text Notes 9000 2450 0    50   ~ 0
+GND\nCS\nDOUT\nDIN\nSCK
+Text GLabel 6700 4800 2    39   Input ~ 0
+GND
+$Comp
+L Connector:Conn_01x05_Male J6
+U 1 1 5BC1AC24
+P 8350 2250
+F 0 "J6" H 8456 2628 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 8456 2537 50  0000 C CNN
+F 2 "" H 8350 2250 50  0001 C CNN
+F 3 "~" H 8350 2250 50  0001 C CNN
+	1    8350 2250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8700 2050 2    39   Input ~ 0
 GND
 Wire Wire Line
-	7000 2950 7000 3100
-Wire Wire Line
-	7000 3100 7000 3200
-Connection ~ 7000 3100
-Connection ~ 7000 3200
-Wire Wire Line
-	7000 3200 7000 3300
-Connection ~ 7000 3300
-Wire Wire Line
-	7000 3300 7000 3400
-Connection ~ 7000 3400
-Wire Wire Line
-	7000 3400 7000 3500
-Connection ~ 7000 3500
-Wire Wire Line
-	7000 3500 7000 3600
-Connection ~ 7000 3600
-Wire Wire Line
-	7000 3600 7000 3700
-Connection ~ 7000 3700
-Wire Wire Line
-	7000 3700 7000 3800
-Connection ~ 7000 3800
-Wire Wire Line
-	7000 3800 7000 3900
-Connection ~ 7000 3900
-Wire Wire Line
-	7000 3900 7000 4000
-Connection ~ 7000 4000
-Wire Wire Line
-	7000 4000 7000 4100
-Connection ~ 7000 4100
-Wire Wire Line
-	7000 4100 7000 4200
+	8550 2050 8700 2050
 $EndSCHEMATC
