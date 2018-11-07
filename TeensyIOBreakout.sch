@@ -334,8 +334,8 @@ $Comp
 L Connector:Conn_01x14_Male J4
 U 1 1 5BBD8B92
 P 7200 3800
-F 0 "J4" H 7173 3773 50  0000 R CNN
-F 1 "Conn_01x14_Male" H 7173 3682 50  0000 R CNN
+F 0 "J4" H 7150 3850 50  0000 R CNN
+F 1 "Conn_01x14_Male" V 7100 3750 50  0000 R CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 7200 3800 50  0001 C CNN
 F 3 "~" H 7200 3800 50  0001 C CNN
 	1    7200 3800
@@ -345,8 +345,8 @@ $Comp
 L Connector:Conn_01x14_Male J2
 U 1 1 5BBDA01C
 P 7200 2200
-F 0 "J2" H 7173 2173 50  0000 R CNN
-F 1 "Conn_01x14_Male" H 7173 2082 50  0000 R CNN
+F 0 "J2" H 7150 2250 50  0000 R CNN
+F 1 "Conn_01x14_Male" V 7100 2150 50  0000 R CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 7200 2200 50  0001 C CNN
 F 3 "~" H 7200 2200 50  0001 C CNN
 	1    7200 2200
@@ -524,4 +524,112 @@ Text GLabel 8700 2050 2    39   Input ~ 0
 GND
 Wire Wire Line
 	8550 2050 8700 2050
+$Comp
+L Connector:Conn_01x14_Male J8
+U 1 1 5BE253DF
+P 7700 2200
+F 0 "J8" H 7650 2250 50  0000 R CNN
+F 1 "Conn_01x14_Male" V 7600 2150 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 7700 2200 50  0001 C CNN
+F 3 "~" H 7700 2200 50  0001 C CNN
+	1    7700 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x14_Male J9
+U 1 1 5BE25488
+P 7700 3800
+F 0 "J9" H 7650 3850 50  0000 R CNN
+F 1 "Conn_01x14_Male" V 7600 3750 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x14_Pitch2.54mm" H 7700 3800 50  0001 C CNN
+F 3 "~" H 7700 3800 50  0001 C CNN
+	1    7700 3800
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7500 3050 2    39   Input ~ 0
+3V3
+Text GLabel 7500 1450 2    39   Input ~ 0
+3V3
+Wire Wire Line
+	7500 1450 7500 1600
+Connection ~ 7500 1600
+Wire Wire Line
+	7500 1600 7500 1700
+Connection ~ 7500 1700
+Wire Wire Line
+	7500 1700 7500 1800
+Connection ~ 7500 1800
+Wire Wire Line
+	7500 1800 7500 1900
+Connection ~ 7500 1900
+Wire Wire Line
+	7500 1900 7500 2000
+Connection ~ 7500 2000
+Wire Wire Line
+	7500 2000 7500 2100
+Connection ~ 7500 2100
+Wire Wire Line
+	7500 2100 7500 2200
+Connection ~ 7500 2200
+Wire Wire Line
+	7500 2200 7500 2300
+Connection ~ 7500 2300
+Wire Wire Line
+	7500 2300 7500 2400
+Connection ~ 7500 2400
+Wire Wire Line
+	7500 2400 7500 2500
+Connection ~ 7500 2500
+Wire Wire Line
+	7500 2500 7500 2600
+Connection ~ 7500 2600
+Wire Wire Line
+	7500 2600 7500 2700
+Connection ~ 7500 2700
+Wire Wire Line
+	7500 2700 7500 2800
+Connection ~ 7500 2800
+Wire Wire Line
+	7500 2800 7500 2900
+Wire Wire Line
+	7500 3050 7500 3200
+Connection ~ 7500 3200
+Wire Wire Line
+	7500 3200 7500 3300
+Connection ~ 7500 3300
+Wire Wire Line
+	7500 3300 7500 3400
+Connection ~ 7500 3400
+Wire Wire Line
+	7500 3400 7500 3500
+Connection ~ 7500 3500
+Wire Wire Line
+	7500 3500 7500 3600
+Connection ~ 7500 3600
+Wire Wire Line
+	7500 3600 7500 3700
+Connection ~ 7500 3700
+Wire Wire Line
+	7500 3700 7500 3800
+Connection ~ 7500 3800
+Wire Wire Line
+	7500 3800 7500 3900
+Connection ~ 7500 3900
+Wire Wire Line
+	7500 3900 7500 4000
+Connection ~ 7500 4000
+Wire Wire Line
+	7500 4000 7500 4100
+Connection ~ 7500 4100
+Wire Wire Line
+	7500 4100 7500 4200
+Connection ~ 7500 4200
+Wire Wire Line
+	7500 4200 7500 4300
+Connection ~ 7500 4300
+Wire Wire Line
+	7500 4300 7500 4400
+Connection ~ 7500 4400
+Wire Wire Line
+	7500 4400 7500 4500
 $EndSCHEMATC
